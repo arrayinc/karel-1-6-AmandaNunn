@@ -6,3 +6,14 @@
  */
 
 import "turns";
+
+function SolveMaze(){
+	while(noBeepersPresent()){
+		turnRight();
+		while(frontIsBlocked()){
+			turnLeft();
+		}
+		move();
+	}
+
+}
